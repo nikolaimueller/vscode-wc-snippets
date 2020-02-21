@@ -16,14 +16,14 @@ __Add custom snippet(s) by hand to Visual Studio Code:__
     + Prepare to copy the __content__ of both snippets to the clipboard.
         - You can achive this by cloning this repository via git to some local folder, and then open the snippet files in your editor/IDE...
         - ...or, in GitHub, you can open the snippet files directly: Select the \<Code\> tab and click into the ``snippets`` folder, then click the respective snippet file and select the ``Raw`` button - now the raw content can easily be copied.
-* Open Visual Studio Code
+* Open Visual Studio Code, repeat the following steps for each snippet:
     + Open menu ``File/Preferences/User Snippets`` (de: ``Datei/Einstellungen/Benutzercodeausschnitte``)  you have three options now: 
-        - Add to __Global__: Select ``New Global snippets file`` (de: ``Neue globale Codeausschnittsdatei``) then type or select ``javascript`` and ``css`` respectively.
-        - Add to __User__: Just type or select ``javascript`` and ``css`` respectively.
-        - Add to __Project__: Select ``New Snippets for '<your project folder>'`` then type or select ``javascript`` and ``css`` respectively.
-    + A new editor tab appears ...
-    + ... copy the content from the snippet files - one after the other - into the respective editor tabs.
-    + Finally save the new files. *(Hint: Remember the path of the files before you close the editor tabs!)*
+        - Add to __Global__: Select ``New Global snippets file`` (de: ``Neue globale Codeausschnittsdatei``) then type or select ``javascript`` or ``css`` respectively.
+        - Add to __User__: Just type or select ``javascript`` or ``css`` respectively.
+        - Add to __Project__: Select ``New Snippets for '<your project folder>'`` then type or select ``javascript`` or ``css`` respectively.
+    + A new editor tab appears for each snippet file ...
+    + ... copy the content from the snippet file, from this git repository, into the respective new editor tab.
+    + Finally save the new file. *(Hint: Remember the path of the file before you close the editor tabs!)*
 
 > I partially copied the german Visual Studio Code UI text (de:), because the german translation leads me to some confusion - I hope this will help others too ``;-)``
 
