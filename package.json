@@ -4,7 +4,11 @@
     "snippets": [
       {
         "language": "javascript",
-        "path": "./snippets.json"
+        "path": "./javascrip.json"
+      },
+      {
+        "language": "css",
+        "path": "./css.json"
       }
     ]
   }
