@@ -43,7 +43,7 @@ I like to separete css from js into different sourcecode files.
 
 ## Usage Example
 
-*Hint: Web components are a kombination of web technologies - most of all `custom elements` and a `javascript class` which implements the custom element and turns it into a component. I use the words component, web component and custom element as synonymes here.*
+*Hint: Web components are a combination of web technologies - most of all `custom elements` and a `javascript class` which implements the custom element and turns it into a component. I use the words component, web component and custom element as synonymes here.*
 
 __Play the example__
 
