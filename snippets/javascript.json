@@ -2,13 +2,13 @@
 	"Custom Element Class v1": {
 		"prefix": "cec",
 		"body": [
+			"// Component: $TM_FILENAME_BASE",
 			"// See:   https://developer.mozilla.org/en-US/docs/Web/Web_Components",
 			"",
 			"const template = document.createElement('template');",
 			"template.innerHTML = `",
-			"<h1>",
-			"\t<p>Template comes here.</p>",
-			"</h1>",
+			"<h1>class: $TM_FILENAME_BASE</h1>",
+			"<p>Custom Template TAG: &lt;<code>${2:}</code>&gt; content comes here.</p>",
 			"`;",
 			"",
 			"export default class $TM_FILENAME_BASE extends HTMLElement {",

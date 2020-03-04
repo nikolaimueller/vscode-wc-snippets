@@ -37,9 +37,42 @@ __Add custom snippet(s) by hand to Visual Studio Code:__
 The ideas for the both snippets are this:  
 I like to separete css from js into different sourcecode files.
 
-* So there is a snippet ``cec`` for the ``.js`` file, generating the custom element and it's class along with a html dummy-template.  
+* So there is a snippet ``cec`` for the ``.js`` file, generating the custom element and it's class along with a html-template and some dummy-content.  
 * The other snippet ``ces`` generates pseudo __css__ stuff, speciffic for custom elements and shadowDOM.
+* The generated class contains code to load the CSS file automatically.
 
+## Usage Example
+
+*Hint: Web components are a kombination of web technologies - most of all `custom elements` and a `javascript class` which implements the custom element and turns it into a component. I use the words component, web component and custom element as synonymes here.*
+
+__Play the example__
+
+* Prerequisite: Install the snippets - follow the installation at [Setup in VSCode](#Setup-in-VSCode)
+* Clone this git repository to some local folder on your machine:  
+`git clone https://github.com/nikolaimueller/vscode-wc-snippets.git`
+* Navigate into the new folder:  
+`cd vscode-wc-snippets`
+* Open Visual Studio Code in the new folder: `code . &`  *(that command works on Windows as well as on Linux! The `.` means: 'open in current working directory' and `&` executes the process (code) independently/parellel from the command shell.)*
+* Now you need a "ad hock" webserver - *ps: I like [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)* - and start browsing the file `DemoComponent.html`.
+* Open your browsers development tools and look into the console - you will see that, at this moment, there is no `DummyComponent.js` file.
+* In Visual Studio Code create a new file named `DemoComponent.js` - the new file opens in an new editor.
+* In the new editor type `cec` (snippet prefix) and press `Enter` - a lot of sorce code will be apear in the editor...
+* ...the cursor is placed "some where" inside that new code, just type the __tag name__ of your new custom element - for example `demo-component` - safe it, now the content of the new web component should be visible in the browser.
+* __Congratulations - that's your new `DemoComponent` implementation!__
+* But wait a moment, we are not ready - we need some `CSS` for the new component - create another file `DemoComponent.css` and in the new editor type `ces`, then hit `Enter` key and safe the file.
+* __Bingo! Your component has a red border now - well done!__
+
+__Some ideas about naming conventions:__
+
+* It's common, best practice for long time now, to name the source code file which contains classes like the class name they contain. And class names allways starts with a upper-case letter (ie.: class `DomeComponent` --> `DomeComponent.js`).
+* At least my component implementations need more than one file - as a result I create a subfolder for each component and put my `'*.js'`, `'*.css'`, `'*.md'`, etc. into that subfolder. And I like to repeat the class name of the component for the folder name too (a good alternative could be the component's tag name).
+* Syntactivally browsers demand to name custom elements all lower-case with at least one dash somewhere in the middle of the tag name.
+    + It's a good idea to let the custom element's name follow the class name, like so: &lt;`demo-component`&gt; ... `DemoComponent`
+    + For 3rd party components it's reasonable to start the name with a short prefix, a shorthand for the component library (ie.: `my-route-view` ... `MyRouteView`)
+    + while components local to the project could have a name ending with postfixed `Component` - like so: ``md-viewer-component`` ... ``MdViewerComponent``
+    + My habbit is to have a `components` subfolder below the project root-folder, and put all components for the actual project there.
+
+*These are just some ideas for naming and structuring source code - the details are not so important, but __having__ some __coding convention__ and to __follow it__ - that __is important!__*
 
 ## Links
 
