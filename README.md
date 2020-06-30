@@ -30,16 +30,22 @@ __Add custom snippet(s) by hand to Visual Studio Code:__
 ## Supplied Snippets
 
 | Prefix | Descriptiony | Path |
-| --- | --- | --- |
-| cec | <b>c</b>ustom <b>e</b>lement <b>c</b>lass | ``./snippets/javascript.json`` |
-| ces | <b>c</b>ustom <b>e</b>lement <b>s</b>tyle-sheet | ``./snippets/css.json`` |
+| ---  | --- | --- |
+| cec  | <b>c</b>ustom <b>e</b>lement <b>c</b>lass | ``./snippets/javascript.json`` |
+| ces  | <b>c</b>ustom <b>e</b>lement <b>s</b>tyle-sheet | ``./snippets/css.json`` |
+| ceci | <b>c</b>ustom <b>e</b>lement <b>c</b>lass <b>i</b>nline | ``./snippets/javascript.json`` |
 
-The ideas for the both snippets are this:  
+1.) The ideas for the snippets __`cec`__ and __`ces`__ are this:  
 I like to separete css from js into different sourcecode files.
 
 * So there is a snippet ``cec`` for the ``.js`` file, generating the custom element and it's class along with a html-template and some dummy-content.  
 * The other snippet ``ces`` generates pseudo __css__ stuff, speciffic for custom elements and shadowDOM.
 * The generated class contains code to load the CSS file automatically.
+
+2.) The snippet __`ceci`__ is applicable for a __monolithic HTML__ file, where all components are kept inline in one `<script>` block. In this case the __css file__ (mentioned above) becomes obsolete, thus styles are 'relocated' into the template string of the component.  
+Following the "monolithic" approach, one can build a HTML file, which can be started directly from the filesystem into the browser - without the need for a web-server.
+
+> For good reasons, modern browsers deny do load further (css, js, ...) files if you loaded the origin HTML file from the filesystem directly (see: [Same-origin policy](https://developer.mozilla.org/de/docs/Web/Security/Same-origin_policy)).
 
 ## Usage Example
 
