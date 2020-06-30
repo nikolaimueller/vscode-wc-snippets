@@ -59,13 +59,13 @@ __Play the example__
 * Navigate into the new folder:  
 `cd vscode-wc-snippets`
 * Open Visual Studio Code in the new folder: `code . &`  *(that command works on Windows as well as on Linux! The `.` means: 'open in current working directory' and `&` executes the process (code) independently/parellel from the command shell.)*
-* Now you need a "ad hock" webserver - *ps: I like [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)* - and start browsing the file `DemoComponent.html`.
-* Open your browsers development tools and look into the console - you will see that, at this moment, there is no `DummyComponent.js` file.
-* In Visual Studio Code create a new file named `DemoComponent.js` - the new file opens in an new editor.
+* Now you need a "ad hock" webserver - *ps: I like [LiveServer](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)* - and start browsing the file `example\DemoComponent.html`.
+* Open your browsers development tools and look into the console - you will see that, at this moment, there is no `example\DummyComponent.js` file.
+* In Visual Studio Code create a new file named `example\DemoComponent.js` - the new file opens in an new editor.
 * In the new editor type `cec` (snippet prefix) and press `Enter` - a lot of sorce code will be apear in the editor...
 * ...the cursor is placed "some where" inside that new code, just type the __tag name__ of your new custom element - for example `demo-component` - safe it, now the content of the new web component should be visible in the browser.
 * __Congratulations - that's your new `DemoComponent` implementation!__
-* But wait a moment, we are not ready - we need some `CSS` for the new component - create another file `DemoComponent.css` and in the new editor type `ces`, then hit `Enter` key and safe the file.
+* But wait a moment, we are not ready - we need some `CSS` for the new component - create another file `example\DemoComponent.css` and in the new editor type `ces`, then hit `Enter` key and safe the file.
 * __Bingo! Your component has a red border now - well done!__
 
 __Some ideas about naming conventions:__
